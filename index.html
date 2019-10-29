@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajayu</title>
+    <!-- main css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet"> 
+
+    <!-- bootstrap--> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--font awesome -->
+    <script src="https://kit.fontawesome.com/4953fa2d21.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <img src="./img/portada.jpg" alt="" class="img_click" id="img_click">
+    <div class="modal_portada" id="modal_portada">
+      <span class="cerrar" id="cerrar">&times;</span>
+      <img src="modal_content" id="modal_content">
+      <div id="caption"></div>
+    </div>
+
+
+  
+    <div class="container">
+        <nav class="navegacion navbar navbar-expand-lg position-sticky" style="height: 75px;">
+            <a class="logo-link" id="inicio_brand" href="#">
+                <img src="img/logo.png" class="logo" style="width: 25%;">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars fa-2x"></i>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" id="inicio" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="talleres" href="#">Talleres Formativos <span class="sr-only">(current)</span></a>
+                </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" id="Charlas" href="#">Charlas Magistrales <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="inicio" href="#">Fogon de Proyectos <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="inicio" href="#">Laboratorio Animado<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ajayu
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" id="a_2019" href="#">2019</a>
+                    <a class="dropdown-item" id="a_2018" href="#">2018</a>
+                    <a class="dropdown-item" id="a_2017" href="#">2017</a>
+                    <a class="dropdown-item" id="a_2016" href="#">2016</a>
+
+                  </div>
+                </li>
+
+              </ul>
+              
+            </div>
+        </nav> 
+
+        <div class="contenido" id="contenido">
+
+        </div>
+        <div class="actividades">
+          <div class="card_actividades card">
+              <a href="#" class="btn">
+                <i class="far fa-comment-alt fa-5x card-img-top"></i>
+              </a>
+            <div class="card-body">
+                
+                <h6 class="card-title">Tallers Formativos</h6>
+                
+                
+            </div>
+          </div>
+          <div class="card_actividades card">
+              <a href="#" class="btn">
+                <i class="fas fa-comments fa-5x" class="card-img-top"></i>
+            </a>
+            <div class="card-body">
+                
+                <h6 class="card-title">Charlas Magistrales</h6>
+                
+                
+            </div>
+          </div>
+          <div class="card_actividades card">
+              <a href="#" class="btn">
+                  <i class="fas fa-fire fa-5x" class="card-img-top"></i>
+              </a>
+            <div class="card-body">
+                
+                <h6 class="card-title">Fogon</h6>
+                
+                
+            </div>
+          </div>
+          <div class="card_actividades card">
+              <a href="#" class="btn">
+                <i class="fas fa-flask fa-5x card-img-top"></i>
+              </a>
+            <div class="card-body">
+                
+                <h6 class="card-title">Ajayulab</h6>
+                
+                
+            </div>
+          </div>
+        </div>
+        <div class="publicaciones" id="publicaciones">
+
+        </div>
+        
+    </div>  
+    <footer id="footer">
+      <div class="container">
+        <div class="footer_img" >
+          <div class="img_foot">
+              <div  style="width: 18rem;">
+                  <img src="./img/sapa_inti.png" class="card-img-top" alt="...">
+              </div>
+          </div>
+          <div class="desc_foot">
+              <div class="card-body text-white-50">
+                  <h5 class="card-title">Contacto</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia totam quisquam deserunt atque modi laboriosam, aspernatur provident itaque nihil sed vero, placeat adipisci quibusdam consequatur pariatur laborum. Itaque, sint voluptatum!</p>
+                  <a href="#" class="btn btn-primary">Contactanos.</a>
+                </div>
+          </div>
+        </div>
+        <div class="footerdiv_sapa">
+            <h4 class="footer_sapa">Copyright©2019 Festival Internacional de Animación AJAYU</h4>
+        </div>
+      </div>
+    </footer>         
+
+    <script src="publicaciones.json"></script>
+    <script src="js/facebook.js"></script>  
+    <!-- bootstrap js-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+
+
+</body>
+</html>
