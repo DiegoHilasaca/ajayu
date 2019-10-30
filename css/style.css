@@ -149,8 +149,7 @@
 /*---Contenido---*/
 .contenido{
     display: grid;    
-    margin-top: 25px; 
-    margin-bottom: 25px;
+    margin:15px 0px;
 }
 
 .cards_container{
@@ -158,16 +157,23 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 1em;
+    margin-top:15px ;
 }
 .cards_tittle_container{
     background-color: #e22829;
     display: block;
-    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 50px;
+
 }
 .cards_tittle{
     grid-column: -1/1;
-    margin: 40px;
+    
     color: #b3d2cb;
+    
+    
     
 }
 /*--------Slider/Carousel---------*/
@@ -203,13 +209,33 @@
     justify-items: center;
     align-items: center;
 }
+.actividades_2{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 1em;
+    justify-items: center;
+    align-items: center;
+}
+.iconos_actividades{
+
+    filter: saturate(30%);
+    filter: brightness(500%);
+    
+}
 .card_actividades{
-    padding: 20px 0px;
+    padding: 20px 0px 0px 0px;
     text-align: center;
     align-self: stretch;
     justify-self: stretch;
     
     box-shadow: 2px 2px 5px #000;
+}
+.card_actividades div i{
+    text-decoration-color: none;
+}
+.card_actividades:hover{
+    text-decoration: none;
+    
 }
 .card_actividades:hover{
     box-shadow: 5px 5px 10px #000;
